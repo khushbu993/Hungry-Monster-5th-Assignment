@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.meal-wrapper {
+  text-align: center;
+}
+
+.meal-wrapper h1 {
+  margin-top: 10px;
+}
+
+.meal-search {
+  margin: 60px 0px;
+}
+
+/* search meal area */
+
+input.search-content {
+  background: #f8f7f5;
+  border: none;
+  padding: 10px 15px;
+  width: 35%;
+  outline: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+button.search-btn {
+  width: 10%;
+  border: none;
+  padding: 10px;
+  background: #f06c4e;
+  color: #fff;
+  outline: 0;
+  margin-left: -3px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* meal result area */
+
+#meal {
+  margin-bottom: 40px;
+}
+
+.meal-result {
+  margin-top: 30px;
+}
+
+.meal-item {
+  background: rgb(248, 247, 245);
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 79%) 0px 4px 21px -14px;
+  margin-bottom: 35px;
+}
+
+.meal-img img {
+  width: 100%;
+  height: 226px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.meal-name {
+  padding: 15px 0px;
+}
+
+.meal-name h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #252525;
+}
+
+/* meal model area */
+
+.meal-detail {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #f32f03;
+  border-radius: 10px;
+  width: 60%;
+  height: 80%;
+  overflow-y: scroll;
+  display: none;
+  padding: 40px;
+  text-align: left;
+}
+
+.meal-details-content {
+  margin-left: 55px;
+}
+
+.meal-detail-img img {
+  width: 590px;
+  height: 320px;
+  border-radius: 10px;
+}
+
+.meal-title h3 {
+  font-size: 45px;
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.meal-detail::-webkit-scrollbar {
+  width: 10px;
+}
+
+.meal-detail::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+.meal-ingredients h5 {
+  font-size: 23px;
+  text-transform: capitalize;
+  margin: 15px 0px;
+}
+
+.meal-ingredients ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.meal-ingredients ul li {
+  padding-bottom: 10px;
+}
+
+.meal-ingredients ul li i {
+  padding-right: 10px;
+}
+
+.meal-close-button {
+  text-align: center;
+}
+
+button.close-btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  outline: none;
+}
+
+/* javascript */
+.showRecipe {
+  display: block;
+}
+
+.notFound {
+  text-align: center;
+  font-size: 20px;
+  color: #1300c0;
+}

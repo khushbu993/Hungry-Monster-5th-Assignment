@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hungry Monster</title>
+  <!-- font-awesome-cdn -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- bootstrap-css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <!-- main-css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <!-- meal section start -->
+    <div class="meal-wrapper">
+      <h1 class="text-center" style="background-color: #f32f03;color: whitesmoke;border-radius: 10px;">HUNGRY
+        MONSTER API</h1>
+      <!-- search meal area start -->
+      <div class="meal-search">
+        <input id="searchInput" type="text" placeholder="Search for meal ..............................."
+          class="search-content" />
+        <button id="searchBtn" type="submit" class="search-btn" style="background-color: #f32f03;color: whitesmoke;font-weight: bolder; ">
+          Search Meal
+        </button>
+      </div>
+      <!-- search meal area end -->
+      <!-- meal result area start-->
+      <div id="meal" class="row"></div>
+      <!-- meal result area end-->
+      <!-- meal model area start-->
+      <div class="meal-detail">
+        <div class="meal-details-content">
+        </div>
+        <div class="meal-close-button">
+          <button id="recipeCloseBtn" class="close-btn" style="background-color: orange;color: whitesmoke;">Close</button>
+        </div>
+      </div>
+      <!-- meal model area end-->
+    </div>
+    <!-- meal section end -->
+  </div>
+  <!-- raw coding JavaScript -->
+  <script src="index.js"></script>
+</body>
+
+</html>
